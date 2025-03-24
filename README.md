@@ -1,3 +1,3 @@
-# Graphics web project
+# Web graphics base project
 
-Base project for graphics experiments with web techs and software rendering
+Base project for software rendering experiments with Typescript and Wasm
