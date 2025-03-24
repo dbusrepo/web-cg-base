@@ -83,7 +83,7 @@ function copyTextures2WasmMem(
   texturesIndex: Uint8Array,
   texturesPixels: Uint8Array,
 ): void {
-  assert(texDescIndexSize);
+  assert.ok(texDescIndexSize);
   const { length: numTextures } = textures;
   const texsIndexView = new DataView(
     texturesIndex.buffer,
@@ -111,7 +111,7 @@ function copyTextures2WasmMem(
       texturesIndex.byteOffset + curFirstMipDescOffs,
     );
     let curMipDescOffs = 0;
-    // fill mipmaps descs index
+    // fill mipmaps desc index
     for (let j = 0; j < numMips; ++j) {
       const level = levels[j]!;
       const {
@@ -144,7 +144,7 @@ function copyTextures2WasmMem(
       curMipTexelsOffs += buf8.length;
       curMipDescOffs += MIPMAP_DESC_SIZE;
     }
-    // move to next texture and mipmaps descs
+    // move to next texture and mipmaps desc
     curTexDescOffs += TEX_DESC_SIZE;
     curFirstMipDescOffs += numMips * MIPMAP_DESC_SIZE;
   }

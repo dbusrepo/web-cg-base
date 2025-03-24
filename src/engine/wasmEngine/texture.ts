@@ -92,7 +92,9 @@ const initTextureWasmView = (
   wasmTexIdx: number,
   wasmMipIdx: number,
 ): Texture => {
-  assert(wasmTexIdx >= 0 && wasmTexIdx < Object.keys(ascImportImages).length);
+  assert.ok(
+    wasmTexIdx >= 0 && wasmTexIdx < Object.keys(ascImportImages).length,
+  );
 
   const texDescOffs =
     gWasmViews.texturesIndex.byteOffset +

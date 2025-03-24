@@ -8,7 +8,7 @@ function loadFileAsArrayBuffer(file: File): Promise<ArrayBuffer> {
       'load',
       (e) => {
         const { result } = e.target!;
-        assert(result instanceof ArrayBuffer);
+        assert.ok(result instanceof ArrayBuffer);
         resolve(result);
       },
       false,

@@ -23,7 +23,7 @@ async function decodePNGs(
           {
             imgInfo = pngDecoder.readInfo(imgBuffer);
             pngDecoder.read(imgBuffer, image);
-            assert(imgInfo.bpp === BPP_RGBA);
+            assert.ok(imgInfo.bpp === BPP_RGBA);
           }
           break;
         }
