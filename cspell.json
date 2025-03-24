@@ -23,7 +23,14 @@
     "yorha",
     "reinit",
     "FULLWIN",
-    "removefrom"
+    "removefrom",
+    "recalc",
+    "Deque",
+    "tpos",
+    "stackoverflow",
+    "TEXELS",
+    "Texels",
+    "texs"
   ],
   "flagWords": [],
   "ignorePaths": [
