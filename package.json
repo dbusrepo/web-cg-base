@@ -1,5 +1,5 @@
 {
-  "name": "webgpu-soft-rend-base",
+  "name": "web-soft-rend-base",
   "type": "module",
   "version": "1.0.0",
   "private": true,
